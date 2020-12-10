@@ -3896,3 +3896,927 @@ Processing by TrailsController#index as */*
 Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 2310)
 
 
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-04 03:17:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 2347)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-04 03:18:12 -0500
+Processing by TrailsController#index as HTML
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 3444)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-06 14:26:09 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 21ms (Views: 10.4ms | ActiveRecord: 3.4ms | Allocations: 2347)
+
+
+Started GET "/trails/" for ::1 at 2020-12-07 12:20:15 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/trails"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 12:20:32 -0500
+Processing by TrailsController#index as HTML
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.7ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 3.2ms | Allocations: 2345)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-07 12:20:46 -0500
+Processing by TrailsController#index as HTML
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.7ms | Allocations: 1821)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 12:21:30 -0500
+Processing by TrailsController#index as HTML
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 3444)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-07 12:37:12 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as HTML
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (1.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (2.7ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 4.4ms | Allocations: 1858)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-07 12:59:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as HTML
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms | Allocations: 1725)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 13:05:51 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 11.1ms | ActiveRecord: 1.0ms | Allocations: 2347)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 13:05:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (1.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (5.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 19.3ms | ActiveRecord: 7.4ms | Allocations: 3110)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 13:06:55 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 13:06:57 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 3110)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-07 13:06:59 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 28ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 1463)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 13:07:42 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.6ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 13:07:45 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.5ms | Allocations: 3110)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 13:09:21 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 3446)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:08:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 0.7ms | Allocations: 2347)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-07 15:08:27 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1463)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-07 15:08:36 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (1.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.4ms | Allocations: 1826)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:08:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (2.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 48ms (Views: 3.5ms | ActiveRecord: 2.9ms | Allocations: 2313)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 15:08:43 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 3110)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 15:08:47 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 3446)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:28:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.8ms | Allocations: 2347)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:28:24 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 15:29:13 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 5.1ms | ActiveRecord: 0.7ms | Allocations: 3110)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-07 15:32:10 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.8ms | Allocations: 1463)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 15:32:12 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 3446)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:36:13 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.6ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 15:36:16 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3110)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:36:18 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:36:19 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 15:36:20 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 16:11:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 3147)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 16:11:15 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 3110)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 16:11:22 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 16:56:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (2.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 3.6ms | Allocations: 2347)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 16:57:03 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 16:57:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 1.7ms | Allocations: 3110)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-07 16:57:07 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 1463)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 16:57:08 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 3446)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 16:57:55 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 16:59:14 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.7ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 16:59:15 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 17:02:59 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 3110)
+
+
+Started GET "/borough" for ::1 at 2020-12-07 18:03:33 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/borough"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-07 18:03:37 -0500
+Processing by BoroughsController#index as HTML
+  [1m[36mBorough Load (1.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 1.0ms | Allocations: 1707)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:20:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (5.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 2.8ms | ActiveRecord: 7.2ms | Allocations: 2347)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:49:23 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 3.7ms | Allocations: 2347)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 18:50:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 3110)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-07 18:51:17 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1463)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 18:51:19 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3446)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-07 18:51:38 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 3446)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:51:59 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:52:33 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 2310)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-07 18:52:57 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3110)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:53:31 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:54:02 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-07 18:54:58 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-08 21:54:38 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 22ms (Views: 10.0ms | ActiveRecord: 3.3ms | Allocations: 2347)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-08 21:54:41 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 3110)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-08 21:54:44 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1463)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-08 21:54:45 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1466)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-08 21:54:46 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 3446)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-08 21:54:49 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 1823)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-08 21:56:37 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1823)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-08 21:56:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1823)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-08 22:19:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3147)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-08 22:38:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 3147)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-08 22:39:26 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-09 12:00:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.9ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 1.9ms | Allocations: 1708)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-09 12:00:25 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1692)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-09 12:01:24 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1692)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-09 12:02:45 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1693)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "boroughs"[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "boroughs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "trails"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "trails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "park_name" varchar, "length" varchar, "difficulty" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "borough_id" integer)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201130201401)[0m
+  [1m[35m (18.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201130200643),
+(20201130200805);
+
+[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (129.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-09 17:03:41.576352"], ["updated_at", "2020-12-09 17:03:41.576352"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "5ed0397a1dc4702891331734a7227614034c4795"], ["created_at", "2020-12-09 17:03:41.620718"], ["updated_at", "2020-12-09 17:03:41.620718"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "boroughs"[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "boroughs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "trails"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "trails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "park_name" varchar, "length" varchar, "difficulty" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "borough_id" integer)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201130201401)[0m
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201130200643),
+(20201130200805);
+
+[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-09 17:03:41.832075"], ["updated_at", "2020-12-09 17:03:41.832075"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.9ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-12-09 17:03:41.882850"], ["key", "environment"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "5ed0397a1dc4702891331734a7227614034c4795"], ["created_at", "2020-12-09 17:03:41.918656"], ["updated_at", "2020-12-09 17:03:41.918656"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.8ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bronx"], ["created_at", "2020-12-09 17:03:42.449143"], ["updated_at", "2020-12-09 17:03:42.449143"]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.5ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "brooklyn"], ["created_at", "2020-12-09 17:03:42.550502"], ["updated_at", "2020-12-09 17:03:42.550502"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.6ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "manhattan"], ["created_at", "2020-12-09 17:03:42.561305"], ["updated_at", "2020-12-09 17:03:42.561305"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.6ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "queens"], ["created_at", "2020-12-09 17:03:42.627602"], ["updated_at", "2020-12-09 17:03:42.627602"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (1.3ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "staten island"], ["created_at", "2020-12-09 17:03:42.668046"], ["updated_at", "2020-12-09 17:03:42.668046"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.7ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Salt Marsh Nature Trail"], ["location", "Enter behind the Salt Marsh Nature Center, located near the intersection of East 33rd Street and Avenue U."], ["park_name", "Marine Park"], ["length", "0.8 miles"], ["created_at", "2020-12-09 17:03:43.044393"], ["updated_at", "2020-12-09 17:03:43.044393"], ["borough_id", 2]]
+  [1m[35m (28.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (3.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lullwater"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "1.0 mile"], ["difficulty", "Easy"], ["created_at", "2020-12-09 17:03:43.195113"], ["updated_at", "2020-12-09 17:03:43.195113"], ["borough_id", 2]]
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Midwood"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.75 miles"], ["difficulty", "Easy"], ["created_at", "2020-12-09 17:03:43.229750"], ["updated_at", "2020-12-09 17:03:43.229750"], ["borough_id", 2]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peninsula"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.5 miles"], ["difficulty", "Easy"], ["created_at", "2020-12-09 17:03:43.252741"], ["updated_at", "2020-12-09 17:03:43.252741"], ["borough_id", 2]]
+  [1m[35m (19.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (2.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Waterfall"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.5 miles"], ["difficulty", "Easy"], ["created_at", "2020-12-09 17:03:43.287768"], ["updated_at", "2020-12-09 17:03:43.287768"], ["borough_id", 2]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.9ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alley Pond Trails"], ["location", "Park-wide. Check out our <a href=\"/park-features/hiking/alley-pond-park\">Alley Pond Park Trails</a> page for a map and directions to scenic locations."], ["park_name", "Alley Pond Park"], ["length", "Various"], ["difficulty", "Various"], ["created_at", "2020-12-09 17:03:43.307778"], ["updated_at", "2020-12-09 17:03:43.307778"], ["borough_id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blue Trail"], ["location", "Forest Park Drive East, off of Woodhaven Boulevard"], ["park_name", "Forest Park"], ["length", "1.7 miles"], ["created_at", "2020-12-09 17:03:43.425641"], ["updated_at", "2020-12-09 17:03:43.425641"], ["borough_id", 4]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (3.1ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Orange Trail"], ["location", "Memorial Drive and Forest Park Drive East"], ["park_name", "Forest Park"], ["length", "2.4 miles"], ["created_at", "2020-12-09 17:03:43.526493"], ["updated_at", "2020-12-09 17:03:43.526493"], ["borough_id", 4]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yellow Trail"], ["location", "Metropolitan Avenue & Forest Park Drive East"], ["park_name", "Forest Park"], ["length", "1.0 mile"], ["created_at", "2020-12-09 17:03:43.558429"], ["updated_at", "2020-12-09 17:03:43.558429"], ["borough_id", 4]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (4.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "South Preserve Trail"], ["location", "Francis Lewis Boulevard and Union Turnpike"], ["park_name", "Cunningham Park"], ["length", "3.0 miles"], ["created_at", "2020-12-09 17:03:43.662207"], ["updated_at", "2020-12-09 17:03:43.662207"], ["borough_id", 4]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "staten island"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Greenbelt Blue Trail (Southern Trailhead)"], ["location", "Brielle Avenue & Roanoake Street"], ["park_name", "La Tourette Parks & Golf Course"], ["length", "12.3 miles"], ["difficulty", "Easy/Moderate"], ["created_at", "2020-12-09 17:03:43.721035"], ["updated_at", "2020-12-09 17:03:43.721035"], ["borough_id", 5]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (1.7ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bayswater Park Hiking Trails"], ["location", "Check out our <a href=\"/park-features/hiking/bayswater-park\">Bayswater Trails</a> page for a map featuring entrances and directions to scenic locations."], ["park_name", "Bayswater Park"], ["length", "0.25 miles"], ["difficulty", "Moderate"], ["created_at", "2020-12-09 17:03:43.744116"], ["updated_at", "2020-12-09 17:03:43.744116"], ["borough_id", 4]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (93.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cass Gallagher Nature Trail"], ["location", "A short walk in from the intersection of Broadway and Mosholu Avenue, near the horse stables."], ["park_name", "Van Cortlandt Park"], ["length", "1.4 miles"], ["difficulty", "Moderate/Difficult"], ["created_at", "2020-12-09 17:03:43.895523"], ["updated_at", "2020-12-09 17:03:43.895523"], ["borough_id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "John Kieran Trail"], ["location", "Enter at Golf Course via Van Cortlandt Park South and Bailey Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.25 miles"], ["difficulty", "Easy"], ["created_at", "2020-12-09 17:03:44.017515"], ["updated_at", "2020-12-09 17:03:44.017515"], ["borough_id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (2.2ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "John Muir Trail"], ["location", "Enter either at Broadway & Mosholu Avenue or Van Cortlandt Park East & Oneida Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.5 miles"], ["difficulty", "Moderate"], ["created_at", "2020-12-09 17:03:44.034251"], ["updated_at", "2020-12-09 17:03:44.034251"], ["borough_id", 1]]
+  [1m[35m (50.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (1.1ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Old Croton Aqueduct Trail"], ["location", "Enter Trail at either Dickinson Avenue & Van Cortlandt Park South or Mosholu Parkway & West Gun Hill Road."], ["park_name", "Van Cortlandt Park"], ["length", "1.1 mile"], ["difficulty", "Easy/Moderate"], ["created_at", "2020-12-09 17:03:44.102836"], ["updated_at", "2020-12-09 17:03:44.102836"], ["borough_id", 1]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.9ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "created_at", "updated_at", "borough_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Putnam Trail"], ["location", "Enter the park at Van Cortlandt Park South and Bailey Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.5 miles"], ["difficulty", "Easy"], ["created_at", "2020-12-09 17:03:44.127248"], ["updated_at", "2020-12-09 17:03:44.127248"], ["borough_id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/boroughs" for ::1 at 2020-12-09 12:03:57 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1693)
+
+
