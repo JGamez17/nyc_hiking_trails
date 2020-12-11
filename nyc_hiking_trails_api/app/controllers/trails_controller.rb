@@ -11,13 +11,14 @@
       
         # PATCH/PUT /trails/1
         def update
+          @trail = Trail.find_by_id(params[:id])
           if @trail.update(trail_params)
             render json: @trail
           else
             render json: @trail.errors, status: :unprocessable_entity
           end
         end
-      
+        
         # DELETE /trails/1
         def destroy
           @trail.destroy
