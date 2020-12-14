@@ -6,6 +6,7 @@ class CreateTrails < ActiveRecord::Migration[6.0]
       t.string :park_name
       t.string :length
       t.string :difficulty
+      t.integer :borough_id
 
       t.timestamps
     end

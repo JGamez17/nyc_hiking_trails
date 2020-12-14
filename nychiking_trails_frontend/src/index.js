@@ -1,6 +1,8 @@
-console.log("testing...");
+const api = new ApiService("http://localhost:3000/boroughs");
+const apiTwo = new ApiService("http://localhost:3000/comments");
+const trailsContainer = document.getElementById("tails");
 
-<script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
-
-
-
+document.addEventListener("DOMContentLoaded", () => {
+  BoroughButton.retrieveBoroughs();
+  // TrailComponent.getButtonClick();
+});

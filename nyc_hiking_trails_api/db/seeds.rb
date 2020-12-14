@@ -18,7 +18,8 @@ trails = [
         Accessible: "Y",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 2
     },
     {
         Prop_ID: "B073",
@@ -31,7 +32,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 2
     },
     {
         Prop_ID: "B073",
@@ -44,7 +46,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 2
     },
     {
         Prop_ID: "B073",
@@ -57,7 +60,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 2
     },
     {
         Prop_ID: "B073",
@@ -70,7 +74,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 2
     },
     {
         Prop_ID: "Q001",
@@ -83,9 +88,11 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 4
     },
     {
+
         Prop_ID: "Q015",
         Name: "Blue Trail",
         Location: "Forest Park Drive East, off of Woodhaven Boulevard",
@@ -96,7 +103,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 4
     },
     {
         Prop_ID: "Q015",
@@ -109,7 +117,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 4
     },
     {
         Prop_ID: "Q015",
@@ -122,7 +131,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 4
     },
     {
         Prop_ID: "Q021",
@@ -135,7 +145,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 4
     },
     {
         Prop_ID: "R013",
@@ -148,7 +159,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 5
     },
     {
         Prop_ID: "Q007",
@@ -161,7 +173,8 @@ trails = [
         Accessible: "N",
         Limited_Access: "N",
         lat: nil,
-        lon: nil
+        lon: nil,
+        "borough_id": 4
     },
          {
          Prop_ID: "X092",
@@ -174,7 +187,8 @@ trails = [
             Accessible: "N",
             Limited_Access: "N",
             lat: nil,
-            lon: nil
+            lon: nil,
+            "borough_id": 1
         },
         {
             Prop_ID: "X092",
@@ -187,7 +201,8 @@ trails = [
             Accessible: "N",
             Limited_Access: "N",
             lat: nil,
-            lon: nil
+            lon: nil,
+            "borough_id": 1
         },
         {
             Prop_ID: "X092",
@@ -200,7 +215,8 @@ trails = [
             Accessible: "N",
             Limited_Access: "Y",
             lat: nil,
-            lon: nil
+            lon: nil,
+            "borough_id": 1
         },
         {
             Prop_ID: "X092",
@@ -213,7 +229,8 @@ trails = [
             Accessible: "N",
             Limited_Access: "N",
             lat: nil,
-            lon: nil
+            lon: nil,
+            "borough_id": 1
         },
         {
             Prop_ID: "X092",
@@ -226,7 +243,8 @@ trails = [
             Accessible: "N",
             Limited_Access: "N",
             lat: nil,
-            lon: nil
+            lon: nil,
+            "borough_id": 1
         }
 ]
 #create a Borough record for each of the 5 boroughs
