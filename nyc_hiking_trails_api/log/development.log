@@ -12966,3 +12966,663 @@ Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 2.6ms | Allocations: 2834)
 Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 861)
 
 
+Started GET "/boroughs" for ::1 at 2020-12-14 11:39:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 11:39:19 -0500
+Started GET "/boroughs/undefined/trails/undefined/comments" for ::1 at 2020-12-14 11:39:19 -0500
+Processing by TrailsController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Processing by CommentsController#index as */*
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  Parameters: {"borough_id"=>"undefined", "trail_id"=>"undefined"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 2929)
+
+
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 2530)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-14 11:48:53 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 11:48:54 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (4.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 4.3ms | Allocations: 2346)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-14 11:53:38 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.7ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 11:53:39 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 2316)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:53:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 876)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:53:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.8ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:53:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-14 11:54:09 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 11:54:09 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:11 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:12 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:20 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:21 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:21 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:21 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:22 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:22 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:22 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:24 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:24 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 1.9ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:27 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:27 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:27 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:27 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-14 11:54:46 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 11:54:47 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:55 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:56 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:58 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:58 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:59 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:59 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:59 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:54:59 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:00 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.4ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:33 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:34 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 862)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:34 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:34 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:35 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-14 11:55:36 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 11:55:37 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.6ms | Allocations: 2310)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:38 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:39 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:40 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:40 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:40 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:40 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:40 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/boroughs/13/trails/undefined/comments" for ::1 at 2020-12-14 11:55:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"borough_id"=>"13", "trail_id"=>"undefined"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", nil]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/" for ::1 at 2020-12-14 11:59:37 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.4ms | Allocations: 195)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 774)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:00:04 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:00:05 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | Allocations: 7)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:00:05 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:00:06 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 7)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:10 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:11 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:11 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:12 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:12 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:13 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:13 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:58 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 7)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-12-14 12:01:59 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 7)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-14 12:04:43 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.8ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-14 12:04:44 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 2310)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-14 12:04:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/trails/13/comments"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/trails/13/comments" for ::1 at 2020-12-14 12:06:16 -0500
+  
+SyntaxError (/Users/jgamez/Development/projects/javascript_project/nyc_hiking_trails/nyc_hiking_trails_api/config/routes.rb:11: syntax error, unexpected end-of-input, expecting end):
+  
+config/routes.rb:11: syntax error, unexpected end-of-input, expecting end
+config/routes.rb:11: syntax error, unexpected end-of-input, expecting end
+Started GET "/trails/13/comments" for ::1 at 2020-12-14 12:09:41 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/trails/13/comments"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/trails/13/comments" for ::1 at 2020-12-14 12:12:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/trails/13/comments"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

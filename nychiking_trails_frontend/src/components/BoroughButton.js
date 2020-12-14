@@ -39,6 +39,5 @@ class BoroughButton {
 
   handleOnClick() {
     api.retrieveTrails(this.id);
-    TrailComponent.getButtonClick();
   }
 }

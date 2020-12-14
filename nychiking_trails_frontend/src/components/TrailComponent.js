@@ -2,24 +2,19 @@ class TrailComponent {
   static container = document.querySelector(".trails");
   static buttonContainer = document.getElementById("buttons");
 
-  constructor(trailInfo, id) {
+  constructor(trailInfo) {
     this.name = trailInfo.name;
     this.location = trailInfo.location;
     this.park_name = trailInfo.park_name;
     this.length = trailInfo.length;
     this.difficulty = trailInfo.difficulty;
-    this.id = id;
+    this.id = trailInfo.id;
     this.renderTrail();
   }
 
-  static getButtonClick() {
-    // const buttonContainer = document.getElementById("buttons");
-    // buttonContainer.addEventListener("click", () => {
-    // console.log(event.target.dataset.id);
-    const id = event.target.dataset.id;
+  getButtonClick() {
     const trailId = this.id;
-    api.retrieveComments(trailId, id);
-    // });
+    api.retrieveComments(trailId);
   }
 
   renderTrail() {
@@ -27,7 +22,17 @@ class TrailComponent {
     div.className = "trails";
     div.innerHTML = this.renderInnerHtml();
     this.div = div;
+    this.attachEventListener();
     this.constructor.container.append(div);
+  }
+
+  attachEventListener = () => {
+    this.div.addEventListener("click", () => this.handleOnClick());
+  };
+
+  handleOnClick() {
+    console.log("click");
+    api.retrieveComments(this.id);
   }
 
   renderInnerHtml() {
@@ -42,6 +47,7 @@ class TrailComponent {
 
       <p> Difficultly: ${this.difficulty}</p>
 
+      <button class="comments"> Trail Comments </button>
     `;
   }
 }

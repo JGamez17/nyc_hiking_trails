@@ -4,5 +4,8 @@ Rails.application.routes.draw do
     resources :trails do 
       resources :comments
     end
+    resources :trails do 
+      resources :comments
   end
+
 end
