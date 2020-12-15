@@ -13626,3 +13626,1485 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:16:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:17:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:17:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:17:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:18:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:18:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:18:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:34 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:20:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-14 12:23:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/boroughs"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-15 15:41:45 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (8.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 7.4ms | ActiveRecord: 8.6ms | Allocations: 5439)
+
+
+Started GET "/boroughs/undefined/trails" for ::1 at 2020-12-15 15:41:47 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"undefined"}
+  [1m[36mBorough Load (2.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.8ms | Allocations: 1550)
+
+
+  
+NoMethodError (undefined method `trails' for nil:NilClass):
+  
+app/controllers/trails_controller.rb:7:in `index'
+Started GET "/boroughs/undefined/trails" for ::1 at 2020-12-15 15:41:48 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"undefined"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1022)
+
+
+  
+NoMethodError (undefined method `trails' for nil:NilClass):
+  
+app/controllers/trails_controller.rb:7:in `index'
+Started GET "/boroughs" for ::1 at 2020-12-15 15:43:27 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1258)
+
+
+Started GET "/boroughs/undefined/trails" for ::1 at 2020-12-15 15:43:28 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"undefined"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1023)
+
+
+  
+NoMethodError (undefined method `trails' for nil:NilClass):
+  
+app/controllers/trails_controller.rb:7:in `index'
+Started GET "/boroughs/undefined/trails" for ::1 at 2020-12-15 15:43:30 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"undefined"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1006)
+
+
+  
+NoMethodError (undefined method `trails' for nil:NilClass):
+  
+app/controllers/trails_controller.rb:7:in `index'
+Started GET "/boroughs" for ::1 at 2020-12-15 15:46:52 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1241)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 15:46:55 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 57ms (Views: 21.8ms | ActiveRecord: 2.4ms | Allocations: 13024)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:46:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/trails/13/comments"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-15 15:47:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 2287)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 15:49:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 84ms (Views: 53.8ms | ActiveRecord: 27.0ms | Allocations: 4942)
+
+
+Started GET "/trails" for ::1 at 2020-12-15 15:49:59 -0500
+Processing by TrailsController#index as HTML
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+  
+NoMethodError (undefined method `trails' for nil:NilClass):
+  
+app/controllers/trails_controller.rb:7:in `index'
+Started GET "/rails/info/routes" for ::1 at 2020-12-15 15:50:08 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [42 times] (Duration: 139.1ms | Allocations: 5849)
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.2ms | Allocations: 928)
+  Rendered /Users/jgamez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 153.1ms | Allocations: 9444)
+Completed 200 OK in 168ms (Views: 159.1ms | ActiveRecord: 0.0ms | Allocations: 10692)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 15:50:39 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 33ms (Views: 12.6ms | ActiveRecord: 1.2ms | Allocations: 10977)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:50:41 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 13]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 37ms (Views: 3.2ms | ActiveRecord: 29.1ms | Allocations: 1587)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:50:55 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 13]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 860)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:50:56 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 13]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.4ms | Allocations: 862)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 15:56:25 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 15:56:27 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2310)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:56:29 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 13]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/trails/14/comments" for ::1 at 2020-12-15 15:56:36 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"14"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 14]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+
+Started GET "/trails/15/comments" for ::1 at 2020-12-15 15:56:40 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"15"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 15]]
+  ↳ app/controllers/comments_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 15:59:08 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 52.4ms | ActiveRecord: 2.0ms | Allocations: 4943)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 15:59:10 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 10.7ms | ActiveRecord: 1.2ms | Allocations: 9512)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:59:12 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 13]]
+  ↳ app/controllers/comments_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.5ms | Allocations: 1557)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 15:59:13 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ?[0m  [["trail_id", 13]]
+  ↳ app/controllers/comments_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 859)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" ORDER BY "trails"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" ORDER BY "trails"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" ORDER BY "trails"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ? LIMIT ?[0m  [["trail_id", 1], ["LIMIT", 11]]
+Started GET "/boroughs" for ::1 at 2020-12-15 16:00:45 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 20.2ms | ActiveRecord: 2.7ms | Allocations: 4942)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 16:00:46 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 31ms (Views: 13.8ms | ActiveRecord: 11.3ms | Allocations: 9511)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 16:00:48 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ? LIMIT ?[0m  [["trail_id", 13], ["LIMIT", 11]]
+  ↳ app/controllers/comments_controller.rb:5:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ? ORDER BY "comments"."id" ASC LIMIT ?[0m  [["trail_id", 13], ["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='13') LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/comments_controller.rb:5:in `index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='13') ORDER BY "comments"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/comments_controller.rb:5:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ? LIMIT ?[0m  [["trail_id", 13], ["LIMIT", 11]]
+  ↳ app/controllers/comments_controller.rb:5:in `index'
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."trail_id" = ? ORDER BY "comments"."id" ASC LIMIT ?[0m  [["trail_id", 13], ["LIMIT", 1]]
+  ↳ (byebug):1:in `index'
+Completed 500 Internal Server Error in 576962ms (ActiveRecord: 3.1ms | Allocations: 207682)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/trails/14/comments" for ::1 at 2020-12-15 16:10:26 -0500
+Started GET "/trails/15/comments" for ::1 at 2020-12-15 16:10:26 -0500
+  [1m[35m (11.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/boroughs" for ::1 at 2020-12-15 16:10:33 -0500
+Started GET "/trails/16/comments" for ::1 at 2020-12-15 16:10:33 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/trails/17/comments" for ::1 at 2020-12-15 16:10:33 -0500
+Processing by CommentsController#index as */*
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"15"}
+  Parameters: {"trail_id"=>"14"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='15')[0m
+  [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='14')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 8147ms (Views: 16.5ms | ActiveRecord: 3.7ms | Allocations: 13423)
+
+
+Completed 200 OK in 15654ms (Views: 8149.3ms | ActiveRecord: 0.3ms | Allocations: 37704)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"17"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/boroughs" for ::1 at 2020-12-15 16:10:53 -0500
+  [1m[36mComment Load (9.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='17')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Started GET "/boroughs" for ::1 at 2020-12-15 16:10:53 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (3.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 18.4ms | ActiveRecord: 6.2ms | Allocations: 4804)
+
+
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"16"}
+Completed 200 OK in 3028ms (Views: 79.5ms | ActiveRecord: 10.2ms | Allocations: 22149)
+
+
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (2.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2660ms (Views: 2655.4ms | ActiveRecord: 2.0ms | Allocations: 58441)
+
+
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='16')[0m
+Started GET "/boroughs" for ::1 at 2020-12-15 16:10:53 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.3ms | Allocations: 2077)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 16:10:56 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 2869ms (Views: 64.1ms | ActiveRecord: 0.3ms | Allocations: 163285)
+
+
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.2ms | Allocations: 4102)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 16:11:03 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 1.1ms | Allocations: 9712)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 16:11:06 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='13')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 18722ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 2904)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 16:11:25 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 16:11:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 0.9ms | Allocations: 4941)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-15 16:11:33 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 66ms (Views: 53.1ms | ActiveRecord: 2.6ms | Allocations: 9488)
+
+
+Started GET "/trails/1/comments" for ::1 at 2020-12-15 16:11:35 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"1"}
+  [1m[36mComment Load (16.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='1')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 32ms (Views: 11.2ms | ActiveRecord: 18.2ms | Allocations: 4825)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 16:12:26 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-15 16:12:27 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 2287)
+
+
+Started GET "/trails/1/comments" for ::1 at 2020-12-15 16:12:28 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='1')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1052)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-15 16:13:23 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 1.2ms | Allocations: 1243)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-15 16:13:24 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 2287)
+
+
+Started GET "/trails/1/comments" for ::1 at 2020-12-15 16:13:25 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"1"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='1')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1052)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "boroughs"[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "boroughs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" varchar, "trail_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "trails"[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "trails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "park_name" varchar, "length" varchar, "difficulty" varchar, "borough_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201212010241)[0m
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201130200643),
+(20201130200805);
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-15 21:17:45.057590"], ["updated_at", "2020-12-15 21:17:45.057590"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7e8cc8170e666dbaa9859f773395fedeac992d6d"], ["created_at", "2020-12-15 21:17:45.081778"], ["updated_at", "2020-12-15 21:17:45.081778"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "boroughs"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "boroughs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" varchar, "trail_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "trails"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "trails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "park_name" varchar, "length" varchar, "difficulty" varchar, "borough_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201212010241)[0m
+  [1m[35m (20.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201130200643),
+(20201130200805);
+
+[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-15 21:17:45.166204"], ["updated_at", "2020-12-15 21:17:45.166204"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-12-15 21:17:45.181011"], ["key", "environment"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7e8cc8170e666dbaa9859f773395fedeac992d6d"], ["created_at", "2020-12-15 21:17:45.300103"], ["updated_at", "2020-12-15 21:17:45.300103"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.6ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bronx"], ["created_at", "2020-12-15 21:17:45.376693"], ["updated_at", "2020-12-15 21:17:45.376693"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.4ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "brooklyn"], ["created_at", "2020-12-15 21:17:45.413905"], ["updated_at", "2020-12-15 21:17:45.413905"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.4ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "manhattan"], ["created_at", "2020-12-15 21:17:45.420593"], ["updated_at", "2020-12-15 21:17:45.420593"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.6ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "queens"], ["created_at", "2020-12-15 21:17:45.450069"], ["updated_at", "2020-12-15 21:17:45.450069"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.3ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "staten island"], ["created_at", "2020-12-15 21:17:45.464455"], ["updated_at", "2020-12-15 21:17:45.464455"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Salt Marsh Nature Trail"], ["location", "Enter behind the Salt Marsh Nature Center, located near the intersection of East 33rd Street and Avenue U."], ["park_name", "Marine Park"], ["length", "0.8 miles"], ["borough_id", 2], ["created_at", "2020-12-15 21:17:45.499304"], ["updated_at", "2020-12-15 21:17:45.499304"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lullwater"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "1.0 mile"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:17:45.515681"], ["updated_at", "2020-12-15 21:17:45.515681"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (1.9ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Midwood"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.75 miles"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:17:45.523845"], ["updated_at", "2020-12-15 21:17:45.523845"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peninsula"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.5 miles"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:17:45.546004"], ["updated_at", "2020-12-15 21:17:45.546004"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Waterfall"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.5 miles"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:17:45.553084"], ["updated_at", "2020-12-15 21:17:45.553084"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alley Pond Trails"], ["location", "Park-wide. Check out our <a href=\"/park-features/hiking/alley-pond-park\">Alley Pond Park Trails</a> page for a map and directions to scenic locations."], ["park_name", "Alley Pond Park"], ["length", "Various"], ["difficulty", "Various"], ["borough_id", 4], ["created_at", "2020-12-15 21:17:45.560420"], ["updated_at", "2020-12-15 21:17:45.560420"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blue Trail"], ["location", "Forest Park Drive East, off of Woodhaven Boulevard"], ["park_name", "Forest Park"], ["length", "1.7 miles"], ["borough_id", 4], ["created_at", "2020-12-15 21:17:45.567555"], ["updated_at", "2020-12-15 21:17:45.567555"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Orange Trail"], ["location", "Memorial Drive and Forest Park Drive East"], ["park_name", "Forest Park"], ["length", "2.4 miles"], ["borough_id", 4], ["created_at", "2020-12-15 21:17:45.581215"], ["updated_at", "2020-12-15 21:17:45.581215"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yellow Trail"], ["location", "Metropolitan Avenue & Forest Park Drive East"], ["park_name", "Forest Park"], ["length", "1.0 mile"], ["borough_id", 4], ["created_at", "2020-12-15 21:17:45.605782"], ["updated_at", "2020-12-15 21:17:45.605782"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "South Preserve Trail"], ["location", "Francis Lewis Boulevard and Union Turnpike"], ["park_name", "Cunningham Park"], ["length", "3.0 miles"], ["borough_id", 4], ["created_at", "2020-12-15 21:17:45.616129"], ["updated_at", "2020-12-15 21:17:45.616129"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "staten island"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Greenbelt Blue Trail (Southern Trailhead)"], ["location", "Brielle Avenue & Roanoake Street"], ["park_name", "La Tourette Parks & Golf Course"], ["length", "12.3 miles"], ["difficulty", "Easy/Moderate"], ["borough_id", 5], ["created_at", "2020-12-15 21:17:45.626569"], ["updated_at", "2020-12-15 21:17:45.626569"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bayswater Park Hiking Trails"], ["location", "Check out our <a href=\"/park-features/hiking/bayswater-park\">Bayswater Trails</a> page for a map featuring entrances and directions to scenic locations."], ["park_name", "Bayswater Park"], ["length", "0.25 miles"], ["difficulty", "Moderate"], ["borough_id", 4], ["created_at", "2020-12-15 21:17:45.644711"], ["updated_at", "2020-12-15 21:17:45.644711"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cass Gallagher Nature Trail"], ["location", "A short walk in from the intersection of Broadway and Mosholu Avenue, near the horse stables."], ["park_name", "Van Cortlandt Park"], ["length", "1.4 miles"], ["difficulty", "Moderate/Difficult"], ["borough_id", 1], ["created_at", "2020-12-15 21:17:45.652244"], ["updated_at", "2020-12-15 21:17:45.652244"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "John Kieran Trail"], ["location", "Enter at Golf Course via Van Cortlandt Park South and Bailey Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.25 miles"], ["difficulty", "Easy"], ["borough_id", 1], ["created_at", "2020-12-15 21:17:45.659811"], ["updated_at", "2020-12-15 21:17:45.659811"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "John Muir Trail"], ["location", "Enter either at Broadway & Mosholu Avenue or Van Cortlandt Park East & Oneida Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.5 miles"], ["difficulty", "Moderate"], ["borough_id", 1], ["created_at", "2020-12-15 21:17:45.666725"], ["updated_at", "2020-12-15 21:17:45.666725"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Old Croton Aqueduct Trail"], ["location", "Enter Trail at either Dickinson Avenue & Van Cortlandt Park South or Mosholu Parkway & West Gun Hill Road."], ["park_name", "Van Cortlandt Park"], ["length", "1.1 mile"], ["difficulty", "Easy/Moderate"], ["borough_id", 1], ["created_at", "2020-12-15 21:17:45.679354"], ["updated_at", "2020-12-15 21:17:45.679354"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Putnam Trail"], ["location", "Enter the park at Van Cortlandt Park South and Bailey Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.5 miles"], ["difficulty", "Easy"], ["borough_id", 1], ["created_at", "2020-12-15 21:17:45.686421"], ["updated_at", "2020-12-15 21:17:45.686421"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "boroughs"[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "boroughs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" varchar, "trail_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "trails"[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "trails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "park_name" varchar, "length" varchar, "difficulty" varchar, "borough_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201212010241)[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201130200643),
+(20201130200805);
+
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-15 21:18:17.271176"], ["updated_at", "2020-12-15 21:18:17.271176"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7e8cc8170e666dbaa9859f773395fedeac992d6d"], ["created_at", "2020-12-15 21:18:17.374559"], ["updated_at", "2020-12-15 21:18:17.374559"]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "boroughs"[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "boroughs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" varchar, "trail_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "trails"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "trails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "park_name" varchar, "length" varchar, "difficulty" varchar, "borough_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201212010241)[0m
+  [1m[35m (5.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201130200643),
+(20201130200805);
+
+[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-15 21:18:17.431699"], ["updated_at", "2020-12-15 21:18:17.431699"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-12-15 21:18:17.441925"], ["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "7e8cc8170e666dbaa9859f773395fedeac992d6d"], ["created_at", "2020-12-15 21:18:17.450920"], ["updated_at", "2020-12-15 21:18:17.450920"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.4ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bronx"], ["created_at", "2020-12-15 21:18:17.506313"], ["updated_at", "2020-12-15 21:18:17.506313"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.5ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "brooklyn"], ["created_at", "2020-12-15 21:18:17.515563"], ["updated_at", "2020-12-15 21:18:17.515563"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.4ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "manhattan"], ["created_at", "2020-12-15 21:18:17.526288"], ["updated_at", "2020-12-15 21:18:17.526288"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.5ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "queens"], ["created_at", "2020-12-15 21:18:17.533490"], ["updated_at", "2020-12-15 21:18:17.533490"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBorough Create (0.4ms)[0m  [1m[32mINSERT INTO "boroughs" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "staten island"], ["created_at", "2020-12-15 21:18:17.543952"], ["updated_at", "2020-12-15 21:18:17.543952"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Salt Marsh Nature Trail"], ["location", "Enter behind the Salt Marsh Nature Center, located near the intersection of East 33rd Street and Avenue U."], ["park_name", "Marine Park"], ["length", "0.8 miles"], ["borough_id", 2], ["created_at", "2020-12-15 21:18:17.628437"], ["updated_at", "2020-12-15 21:18:17.628437"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lullwater"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "1.0 mile"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:18:17.637844"], ["updated_at", "2020-12-15 21:18:17.637844"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Midwood"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.75 miles"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:18:17.644853"], ["updated_at", "2020-12-15 21:18:17.644853"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.7ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peninsula"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.5 miles"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:18:17.651653"], ["updated_at", "2020-12-15 21:18:17.651653"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "brooklyn"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Waterfall"], ["location", "Enter Park at Lincoln Road and Ocean Avenue entrance.  Trails begin or are near the Prospect Park Audubon Center."], ["park_name", "Prospect Park"], ["length", "0.5 miles"], ["difficulty", "Easy"], ["borough_id", 2], ["created_at", "2020-12-15 21:18:17.660286"], ["updated_at", "2020-12-15 21:18:17.660286"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.9ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alley Pond Trails"], ["location", "Park-wide. Check out our <a href=\"/park-features/hiking/alley-pond-park\">Alley Pond Park Trails</a> page for a map and directions to scenic locations."], ["park_name", "Alley Pond Park"], ["length", "Various"], ["difficulty", "Various"], ["borough_id", 4], ["created_at", "2020-12-15 21:18:17.667717"], ["updated_at", "2020-12-15 21:18:17.667717"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blue Trail"], ["location", "Forest Park Drive East, off of Woodhaven Boulevard"], ["park_name", "Forest Park"], ["length", "1.7 miles"], ["borough_id", 4], ["created_at", "2020-12-15 21:18:17.682629"], ["updated_at", "2020-12-15 21:18:17.682629"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (1.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (1.0ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Orange Trail"], ["location", "Memorial Drive and Forest Park Drive East"], ["park_name", "Forest Park"], ["length", "2.4 miles"], ["borough_id", 4], ["created_at", "2020-12-15 21:18:17.709459"], ["updated_at", "2020-12-15 21:18:17.709459"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yellow Trail"], ["location", "Metropolitan Avenue & Forest Park Drive East"], ["park_name", "Forest Park"], ["length", "1.0 mile"], ["borough_id", 4], ["created_at", "2020-12-15 21:18:17.742884"], ["updated_at", "2020-12-15 21:18:17.742884"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "South Preserve Trail"], ["location", "Francis Lewis Boulevard and Union Turnpike"], ["park_name", "Cunningham Park"], ["length", "3.0 miles"], ["borough_id", 4], ["created_at", "2020-12-15 21:18:17.750175"], ["updated_at", "2020-12-15 21:18:17.750175"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "staten island"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Greenbelt Blue Trail (Southern Trailhead)"], ["location", "Brielle Avenue & Roanoake Street"], ["park_name", "La Tourette Parks & Golf Course"], ["length", "12.3 miles"], ["difficulty", "Easy/Moderate"], ["borough_id", 5], ["created_at", "2020-12-15 21:18:17.762034"], ["updated_at", "2020-12-15 21:18:17.762034"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "queens"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bayswater Park Hiking Trails"], ["location", "Check out our <a href=\"/park-features/hiking/bayswater-park\">Bayswater Trails</a> page for a map featuring entrances and directions to scenic locations."], ["park_name", "Bayswater Park"], ["length", "0.25 miles"], ["difficulty", "Moderate"], ["borough_id", 4], ["created_at", "2020-12-15 21:18:17.770564"], ["updated_at", "2020-12-15 21:18:17.770564"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.3ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cass Gallagher Nature Trail"], ["location", "A short walk in from the intersection of Broadway and Mosholu Avenue, near the horse stables."], ["park_name", "Van Cortlandt Park"], ["length", "1.4 miles"], ["difficulty", "Moderate/Difficult"], ["borough_id", 1], ["created_at", "2020-12-15 21:18:17.780226"], ["updated_at", "2020-12-15 21:18:17.780226"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.7ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "John Kieran Trail"], ["location", "Enter at Golf Course via Van Cortlandt Park South and Bailey Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.25 miles"], ["difficulty", "Easy"], ["borough_id", 1], ["created_at", "2020-12-15 21:18:17.807532"], ["updated_at", "2020-12-15 21:18:17.807532"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.6ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "John Muir Trail"], ["location", "Enter either at Broadway & Mosholu Avenue or Van Cortlandt Park East & Oneida Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.5 miles"], ["difficulty", "Moderate"], ["borough_id", 1], ["created_at", "2020-12-15 21:18:17.816298"], ["updated_at", "2020-12-15 21:18:17.816298"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.4ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Old Croton Aqueduct Trail"], ["location", "Enter Trail at either Dickinson Avenue & Van Cortlandt Park South or Mosholu Parkway & West Gun Hill Road."], ["park_name", "Van Cortlandt Park"], ["length", "1.1 mile"], ["difficulty", "Easy/Moderate"], ["borough_id", 1], ["created_at", "2020-12-15 21:18:17.826914"], ["updated_at", "2020-12-15 21:18:17.826914"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."name" = ? LIMIT ?[0m  [["name", "bronx"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Create (0.5ms)[0m  [1m[32mINSERT INTO "trails" ("name", "location", "park_name", "length", "difficulty", "borough_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Putnam Trail"], ["location", "Enter the park at Van Cortlandt Park South and Bailey Avenue."], ["park_name", "Van Cortlandt Park"], ["length", "1.5 miles"], ["difficulty", "Easy"], ["borough_id", 1], ["created_at", "2020-12-15 21:18:17.875183"], ["updated_at", "2020-12-15 21:18:17.875183"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrail Load (11.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 1], ["created_at", "2020-12-15 21:18:18.023906"], ["updated_at", "2020-12-15 21:18:18.023906"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (2.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 1], ["created_at", "2020-12-15 21:18:18.044419"], ["updated_at", "2020-12-15 21:18:18.044419"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (2.2ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 1], ["created_at", "2020-12-15 21:18:18.070353"], ["updated_at", "2020-12-15 21:18:18.070353"]]
+  [1m[35m (30.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 1], ["created_at", "2020-12-15 21:18:18.112895"], ["updated_at", "2020-12-15 21:18:18.112895"]]
+  [1m[35m (33.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 1], ["created_at", "2020-12-15 21:18:18.180432"], ["updated_at", "2020-12-15 21:18:18.180432"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 2], ["created_at", "2020-12-15 21:18:18.259638"], ["updated_at", "2020-12-15 21:18:18.259638"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 2], ["created_at", "2020-12-15 21:18:18.284357"], ["updated_at", "2020-12-15 21:18:18.284357"]]
+  [1m[35m (26.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 2], ["created_at", "2020-12-15 21:18:18.415765"], ["updated_at", "2020-12-15 21:18:18.415765"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (2.0ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 2], ["created_at", "2020-12-15 21:18:18.447276"], ["updated_at", "2020-12-15 21:18:18.447276"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 2], ["created_at", "2020-12-15 21:18:18.523904"], ["updated_at", "2020-12-15 21:18:18.523904"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 3], ["created_at", "2020-12-15 21:18:18.542202"], ["updated_at", "2020-12-15 21:18:18.542202"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 3], ["created_at", "2020-12-15 21:18:18.569202"], ["updated_at", "2020-12-15 21:18:18.569202"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 3], ["created_at", "2020-12-15 21:18:18.599008"], ["updated_at", "2020-12-15 21:18:18.599008"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (5.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 3], ["created_at", "2020-12-15 21:18:18.650004"], ["updated_at", "2020-12-15 21:18:18.650004"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 3], ["created_at", "2020-12-15 21:18:18.692144"], ["updated_at", "2020-12-15 21:18:18.692144"]]
+  [1m[35m (24.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 4], ["created_at", "2020-12-15 21:18:18.731183"], ["updated_at", "2020-12-15 21:18:18.731183"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 4], ["created_at", "2020-12-15 21:18:18.751349"], ["updated_at", "2020-12-15 21:18:18.751349"]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 4], ["created_at", "2020-12-15 21:18:18.852012"], ["updated_at", "2020-12-15 21:18:18.852012"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 4], ["created_at", "2020-12-15 21:18:18.871035"], ["updated_at", "2020-12-15 21:18:18.871035"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 4], ["created_at", "2020-12-15 21:18:18.887461"], ["updated_at", "2020-12-15 21:18:18.887461"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 5], ["created_at", "2020-12-15 21:18:18.899940"], ["updated_at", "2020-12-15 21:18:18.899940"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 5], ["created_at", "2020-12-15 21:18:18.952277"], ["updated_at", "2020-12-15 21:18:18.952277"]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 5], ["created_at", "2020-12-15 21:18:18.983687"], ["updated_at", "2020-12-15 21:18:18.983687"]]
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 5], ["created_at", "2020-12-15 21:18:19.063070"], ["updated_at", "2020-12-15 21:18:19.063070"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 5], ["created_at", "2020-12-15 21:18:19.082743"], ["updated_at", "2020-12-15 21:18:19.082743"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 6], ["created_at", "2020-12-15 21:18:19.166193"], ["updated_at", "2020-12-15 21:18:19.166193"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 6], ["created_at", "2020-12-15 21:18:19.192787"], ["updated_at", "2020-12-15 21:18:19.192787"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 6], ["created_at", "2020-12-15 21:18:19.212227"], ["updated_at", "2020-12-15 21:18:19.212227"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 6], ["created_at", "2020-12-15 21:18:19.231325"], ["updated_at", "2020-12-15 21:18:19.231325"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 6], ["created_at", "2020-12-15 21:18:19.246051"], ["updated_at", "2020-12-15 21:18:19.246051"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 7], ["created_at", "2020-12-15 21:18:19.312695"], ["updated_at", "2020-12-15 21:18:19.312695"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 7], ["created_at", "2020-12-15 21:18:19.401034"], ["updated_at", "2020-12-15 21:18:19.401034"]]
+  [1m[35m (23.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 7], ["created_at", "2020-12-15 21:18:19.452773"], ["updated_at", "2020-12-15 21:18:19.452773"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 7], ["created_at", "2020-12-15 21:18:19.470099"], ["updated_at", "2020-12-15 21:18:19.470099"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 7], ["created_at", "2020-12-15 21:18:19.485007"], ["updated_at", "2020-12-15 21:18:19.485007"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 8], ["created_at", "2020-12-15 21:18:19.500037"], ["updated_at", "2020-12-15 21:18:19.500037"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (23.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 8], ["created_at", "2020-12-15 21:18:19.549662"], ["updated_at", "2020-12-15 21:18:19.549662"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 8], ["created_at", "2020-12-15 21:18:19.608541"], ["updated_at", "2020-12-15 21:18:19.608541"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 8], ["created_at", "2020-12-15 21:18:19.625726"], ["updated_at", "2020-12-15 21:18:19.625726"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 8], ["created_at", "2020-12-15 21:18:19.718218"], ["updated_at", "2020-12-15 21:18:19.718218"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 9], ["created_at", "2020-12-15 21:18:19.763661"], ["updated_at", "2020-12-15 21:18:19.763661"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 9], ["created_at", "2020-12-15 21:18:19.796373"], ["updated_at", "2020-12-15 21:18:19.796373"]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 9], ["created_at", "2020-12-15 21:18:19.820022"], ["updated_at", "2020-12-15 21:18:19.820022"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 9], ["created_at", "2020-12-15 21:18:19.837294"], ["updated_at", "2020-12-15 21:18:19.837294"]]
+  [1m[35m (19.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 9], ["created_at", "2020-12-15 21:18:19.867550"], ["updated_at", "2020-12-15 21:18:19.867550"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (6.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 10], ["created_at", "2020-12-15 21:18:19.886182"], ["updated_at", "2020-12-15 21:18:19.886182"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 10], ["created_at", "2020-12-15 21:18:19.922886"], ["updated_at", "2020-12-15 21:18:19.922886"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 10], ["created_at", "2020-12-15 21:18:19.981175"], ["updated_at", "2020-12-15 21:18:19.981175"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 10], ["created_at", "2020-12-15 21:18:20.009372"], ["updated_at", "2020-12-15 21:18:20.009372"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 10], ["created_at", "2020-12-15 21:18:20.073737"], ["updated_at", "2020-12-15 21:18:20.073737"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 11], ["created_at", "2020-12-15 21:18:20.089683"], ["updated_at", "2020-12-15 21:18:20.089683"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 11], ["created_at", "2020-12-15 21:18:20.122487"], ["updated_at", "2020-12-15 21:18:20.122487"]]
+  [1m[35m (55.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 11], ["created_at", "2020-12-15 21:18:20.218537"], ["updated_at", "2020-12-15 21:18:20.218537"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (3.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 11], ["created_at", "2020-12-15 21:18:20.235558"], ["updated_at", "2020-12-15 21:18:20.235558"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 11], ["created_at", "2020-12-15 21:18:20.281172"], ["updated_at", "2020-12-15 21:18:20.281172"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (2.9ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 12], ["created_at", "2020-12-15 21:18:20.299311"], ["updated_at", "2020-12-15 21:18:20.299311"]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 12], ["created_at", "2020-12-15 21:18:20.329902"], ["updated_at", "2020-12-15 21:18:20.329902"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 12], ["created_at", "2020-12-15 21:18:20.418984"], ["updated_at", "2020-12-15 21:18:20.418984"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 12], ["created_at", "2020-12-15 21:18:20.445353"], ["updated_at", "2020-12-15 21:18:20.445353"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 12], ["created_at", "2020-12-15 21:18:20.461098"], ["updated_at", "2020-12-15 21:18:20.461098"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (3.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 13], ["created_at", "2020-12-15 21:18:20.489776"], ["updated_at", "2020-12-15 21:18:20.489776"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 13], ["created_at", "2020-12-15 21:18:20.508050"], ["updated_at", "2020-12-15 21:18:20.508050"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 13], ["created_at", "2020-12-15 21:18:20.611786"], ["updated_at", "2020-12-15 21:18:20.611786"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (5.2ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 13], ["created_at", "2020-12-15 21:18:20.631779"], ["updated_at", "2020-12-15 21:18:20.631779"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 13], ["created_at", "2020-12-15 21:18:20.661587"], ["updated_at", "2020-12-15 21:18:20.661587"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 14], ["created_at", "2020-12-15 21:18:20.685611"], ["updated_at", "2020-12-15 21:18:20.685611"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 14], ["created_at", "2020-12-15 21:18:20.711347"], ["updated_at", "2020-12-15 21:18:20.711347"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 14], ["created_at", "2020-12-15 21:18:20.748573"], ["updated_at", "2020-12-15 21:18:20.748573"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 14], ["created_at", "2020-12-15 21:18:20.811239"], ["updated_at", "2020-12-15 21:18:20.811239"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 14], ["created_at", "2020-12-15 21:18:20.825897"], ["updated_at", "2020-12-15 21:18:20.825897"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (4.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 15], ["created_at", "2020-12-15 21:18:20.850203"], ["updated_at", "2020-12-15 21:18:20.850203"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 15], ["created_at", "2020-12-15 21:18:20.866347"], ["updated_at", "2020-12-15 21:18:20.866347"]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 15], ["created_at", "2020-12-15 21:18:20.935289"], ["updated_at", "2020-12-15 21:18:20.935289"]]
+  [1m[35m (47.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 15], ["created_at", "2020-12-15 21:18:21.043822"], ["updated_at", "2020-12-15 21:18:21.043822"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 15], ["created_at", "2020-12-15 21:18:21.151703"], ["updated_at", "2020-12-15 21:18:21.151703"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 16], ["created_at", "2020-12-15 21:18:21.169768"], ["updated_at", "2020-12-15 21:18:21.169768"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 16], ["created_at", "2020-12-15 21:18:21.220286"], ["updated_at", "2020-12-15 21:18:21.220286"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 16], ["created_at", "2020-12-15 21:18:21.234327"], ["updated_at", "2020-12-15 21:18:21.234327"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 16], ["created_at", "2020-12-15 21:18:21.246507"], ["updated_at", "2020-12-15 21:18:21.246507"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 16], ["created_at", "2020-12-15 21:18:21.279573"], ["updated_at", "2020-12-15 21:18:21.279573"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 17], ["created_at", "2020-12-15 21:18:21.330896"], ["updated_at", "2020-12-15 21:18:21.330896"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 17], ["created_at", "2020-12-15 21:18:21.379762"], ["updated_at", "2020-12-15 21:18:21.379762"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 17], ["created_at", "2020-12-15 21:18:21.416582"], ["updated_at", "2020-12-15 21:18:21.416582"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 17], ["created_at", "2020-12-15 21:18:21.430811"], ["updated_at", "2020-12-15 21:18:21.430811"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "trail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "this is a random comment that could be generate with Faker"], ["trail_id", 17], ["created_at", "2020-12-15 21:18:21.448420"], ["updated_at", "2020-12-15 21:18:21.448420"]]
+  [1m[35m (28.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/boroughs" for ::1 at 2020-12-15 16:18:39 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 1.5ms | Allocations: 5439)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-15 16:18:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 1.7ms | Allocations: 12150)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-15 16:18:42 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='13')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 1.5ms | Allocations: 5149)
+
+
+Started GET "/trails/14/comments" for ::1 at 2020-12-15 16:18:43 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"14"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='14')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1370)
+
+
+Started GET "/trails/15/comments" for ::1 at 2020-12-15 16:18:45 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"15"}
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='15')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 1370)
+
+

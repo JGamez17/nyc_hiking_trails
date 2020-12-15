@@ -272,18 +272,11 @@ trails.each do |trail|
     borough.trails.create(name: trail[:Name], location: trail[:Location], park_name: trail[:Park_Name], length: trail[:Length], difficulty: trail[:Difficulty])
 end
 
-    comments =  [
-        {
-          "id": 1,
-          "comment": "This trail was the best... SO SO happy to have done it!",
-          "trail_id": 1
-        },
-        {
-          "id": 2,
-          "comment": "This was the best thing since the world cup!!!! yes!  ",
-          "trail_id": 1
-        }
-      ]
-    comments.each do |comment|
-     Comment.create(comment: comment[:comment], trail_id: comment[:trail_id])
+   
+    Trail.all.each do |trail|
+        comment = "this is a random comment that could be generate with Faker"
+        5.times do 
+            trail.comments.create(comment: comment)
+        end
     end
+   
