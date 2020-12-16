@@ -1,4 +1,4 @@
-class Comment {
+class Comments {
   static container = document.querySelector(".comment");
 
   constructor(comment) {
@@ -12,7 +12,6 @@ class Comment {
     box.dataset.id = this.comment.id;
     this.box = box;
     this.renderInnerHTML();
-
     this.constructor.container.append(box);
   }
 

@@ -17,6 +17,14 @@ class ApiService {
     const url = this.baseURL + `/trails/${id}/comments`;
     fetch(url)
       .then((res) => res.json())
-      .then((data) => data.forEach((comments) => new Comments(comments)));
+      .then((data) => {
+        // console.log(data);
+        data.forEach((comments) => new Comments(comments));
+      });
   };
+
+  updateLikes = (id) =>
+    fetch(this.baseURL + `/trails/${id}`, {
+      method: "PATCH",
+    }).then((res) => res.json());
 }

@@ -1,43 +1,55 @@
 class BoroughButton {
-  static container = document.querySelector(".buttons");
+  static container = document.getElementById("buttons");
 
-  constructor(name, id) {
-    this.name = name;
-    this.id = id;
+  constructor(boroughs) {
+    this.boroughs = boroughs;
     this.render();
+    this.attachEventListener();
   }
 
   static retrieveBoroughs() {
     api
       .retrieveBoroughs()
-      .then((boroughs) =>
-        boroughs.forEach(
-          (borough) => new BoroughButton(borough.name, borough.id)
-        )
-      );
+      .then((data) => data.forEach((borough) => new BoroughButton(borough)));
   }
 
+  attachEventListener() {
+    this.bttn.addEventListener("click", this.handleOnClick);
+  }
+
+  handleOnClick = (event) => {
+    if (event.target.className == "bttns") {
+      const trailInfo = document.getElementById("trails");
+      trailInfo.innerHTML = "";
+      const id = this.bttn.dataset.id;
+      api.retrieveTrails(id);
+    }
+  };
+
+  // buttonEventListener() {
+  //   this.bttn.addEventListener("click", this.handleOnClick);
+  // };
+
+  // handleOnClick = (event) => {
+  //   if (event.target.className == "comment-button") {
+  //     const trailId = this.trailInfo.id
+  //     console.log(trailId)
+  //   };
+  // }
+
   render = () => {
-    const button = document.createElement("div");
-    button.className = "borough";
-    button.dataset.id = this.id;
-    this.button = button;
+    const bttn = document.createElement("div");
+    bttn.className = "borough-bttn";
+    bttn.dataset.id = this.boroughs.id;
+    this.bttn = bttn;
     this.renderInnerHTML();
-    this.attachEventListener(button);
-    this.constructor.container.append(button);
+    this.constructor.container.append(bttn);
   };
 
   renderInnerHTML() {
-    this.button.innerHTML = `
-      <button class="button"> ${this.name} </button>
+    const { name } = this.boroughs;
+    this.bttn.innerHTML = `
+      <button class="bttns"> ${name} </button>
     `;
-  }
-
-  attachEventListener = (div) => {
-    div.addEventListener("click", () => this.handleOnClick());
-  };
-
-  handleOnClick() {
-    api.retrieveTrails(this.id);
   }
 }

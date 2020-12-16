@@ -8,15 +8,19 @@
           # byebug
           render json: @trails, except: [:created_at, :updated_at]
         end
+
+        def create
+          # @trail = Trail.create(trail_params)
+          @trail.likes = 0
+          @trail.save
+          render json: @trail, except: [:created_at, :updated_at]
+      end
       
         # PATCH/PUT /trails/1
         def update
           @trail = Trail.find_by_id(params[:id])
-          if @trail.update(trail_params)
-            render json: @trail
-          else
-            render json: @trail.errors, status: :unprocessable_entity
-          end
+          @trail.update(likes: @trail.likes + 1)
+          render json: @trail, except: [:created_at, :updated_at]
         end
         
         # DELETE /trails/1

@@ -3,51 +3,80 @@ class TrailComponent {
   static buttonContainer = document.getElementById("buttons");
 
   constructor(trailInfo) {
+    this.trailInfo = trailInfo;
     this.name = trailInfo.name;
     this.location = trailInfo.location;
     this.park_name = trailInfo.park_name;
     this.length = trailInfo.length;
     this.difficulty = trailInfo.difficulty;
-    this.id = trailInfo.id;
     this.renderTrail();
+    this.buttonEventListener();
   }
 
-  getButtonClick() {
-    const trailId = this.id;
-    api.retrieveComments(trailId);
+  buttonEventListener() {
+    this.trail.addEventListener("click", this.handleOnClick);
   }
 
-  renderTrail() {
-    const div = document.createElement("div");
-    div.className = "trails";
-    div.innerHTML = this.renderInnerHtml();
-    this.div = div;
-    this.attachEventListener();
-    this.constructor.container.append(div);
-  }
-
-  attachEventListener = () => {
-    this.div.addEventListener("click", () => this.handleOnClick());
+  handleOnClick = (event) => {
+    if (event.target.className == "comment-button") {
+      const commentInfo = document.getElementById("comments");
+      commentInfo.innerHTML = "";
+      const trailId = this.trailInfo.id;
+      // console.log(trailId)
+      api.retrieveComments(trailId);
+      const trailInfo = document.getElementById("trails");
+      trailInfo.innerHTML = "";
+    }
   };
 
-  handleOnClick() {
-    console.log("click");
-    api.retrieveComments(this.id);
+  // handleOnClick = (event) => {
+  //   if (event.target.className == "like-btn") {
+  //     const trailId = this.trailInfo.id;
+  //     api
+  //       .updateLikes(trailId)
+  //       .then((trailId) => this.updateLikesHTML(trailId.likes));
+  //   }
+  // };
+
+  // updateLikesHTML = (number) => {
+  //   this.trail.innerHTML = `${number} Likes`;
+  // };
+
+  renderTrail() {
+    const trail = document.createElement("div");
+    trail.className = "trails-info";
+    trail.dataset.id = this.trailInfo.id;
+    this.trail = trail;
+    this.renderInnerHTML();
+    this.constructor.container.append(trail);
   }
 
-  renderInnerHtml() {
-    return `
-      <h3> Name: ${this.name}</h3>
+  renderInnerHTML() {
+    const {
+      name,
+      location,
+      park_name,
+      length,
+      difficulty,
+      likes,
+    } = this.trailInfo;
+    this.trail.innerHTML = `
+    <h3> Name: ${name}</h3>
 
-      <p> Location: ${this.location}</p>
+    <p> Location: ${location}</p>
 
-      <p> Park Name: ${this.park_name}</p>
+    <p> Park Name: ${park_name}</p>
 
-      <p> Length: ${this.length}</P>
+    <p> Length: ${length}</P>
 
-      <p> Difficultly: ${this.difficulty}</p>
+    <p> Difficultly: ${difficulty}</p>
 
-      <button class="comments"> Trail Comments </button>
+    <p>${likes} Likes </p>
+
+    <button id="comment-button" class="comment-button" > Click here for comments </button>
+
+    <button id="like-btn" class="like-btn">Like </button>
+    <span>☀️</span>
     `;
   }
 }

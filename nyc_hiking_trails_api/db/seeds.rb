@@ -269,7 +269,7 @@ trails.each do |trail|
     else 
         "Error: Borough not found"
     end 
-    borough.trails.create(name: trail[:Name], location: trail[:Location], park_name: trail[:Park_Name], length: trail[:Length], difficulty: trail[:Difficulty])
+    borough.trails.create(name: trail[:Name], location: trail[:Location], park_name: trail[:Park_Name], length: trail[:Length], difficulty: trail[:Difficulty],likes: trail[:likes])
 end
 
    

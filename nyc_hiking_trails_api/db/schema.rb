@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2020_12_12_010241) do
     t.string "length"
     t.string "difficulty"
     t.integer "borough_id"
+    t.integer "likes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
