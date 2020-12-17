@@ -26,17 +26,6 @@ class BoroughButton {
     }
   };
 
-  // buttonEventListener() {
-  //   this.bttn.addEventListener("click", this.handleOnClick);
-  // };
-
-  // handleOnClick = (event) => {
-  //   if (event.target.className == "comment-button") {
-  //     const trailId = this.trailInfo.id
-  //     console.log(trailId)
-  //   };
-  // }
-
   render = () => {
     const bttn = document.createElement("div");
     bttn.className = "borough-bttn";

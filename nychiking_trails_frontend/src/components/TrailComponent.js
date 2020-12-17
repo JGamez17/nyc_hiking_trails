@@ -22,25 +22,22 @@ class TrailComponent {
       const commentInfo = document.getElementById("comments");
       commentInfo.innerHTML = "";
       const trailId = this.trailInfo.id;
-      // console.log(trailId)
       api.retrieveComments(trailId);
       const trailInfo = document.getElementById("trails");
-      trailInfo.innerHTML = "";
+      // trailInfo.innerHTML = "";
+    }
+    if (event.target.className == "like-btn") {
+      const trailId = this.trailInfo.id;
+      api
+        .updateLikes(trailId)
+        .then((trailId) => this.updateLikesHTML(trailId.likes));
     }
   };
 
-  // handleOnClick = (event) => {
-  //   if (event.target.className == "like-btn") {
-  //     const trailId = this.trailInfo.id;
-  //     api
-  //       .updateLikes(trailId)
-  //       .then((trailId) => this.updateLikesHTML(trailId.likes));
-  //   }
-  // };
-
-  // updateLikesHTML = (number) => {
-  //   this.trail.innerHTML = `${number} Likes`;
-  // };
+  updateLikesHTML = (number) => {
+    const pTag = document.getElementById("likes");
+    pTag.innerHTML = number + " Likes ";
+  };
 
   renderTrail() {
     const trail = document.createElement("div");
@@ -71,9 +68,11 @@ class TrailComponent {
 
     <p> Difficultly: ${difficulty}</p>
 
-    <p>${likes} Likes </p>
+    <p id="likes"> ${likes || 0} Likes </p>
 
     <button id="comment-button" class="comment-button" > Click here for comments </button>
+
+    <div class="comments"> </div> 
 
     <button id="like-btn" class="like-btn">Like </button>
     <span>☀️</span>
