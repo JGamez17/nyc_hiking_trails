@@ -25005,3 +25005,2904 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-16 23:37:21 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 1258)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-16 23:41:05 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-16 23:41:18 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 2423)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-16 23:41:32 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started PATCH "/trails/1" for ::1 at 2020-12-16 23:42:03 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 6], ["updated_at", "2020-12-17 04:42:03.244700"], ["id", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 13ms (Views: 2.5ms | ActiveRecord: 2.9ms | Allocations: 4843)
+
+
+Started PATCH "/trails/1" for ::1 at 2020-12-16 23:42:05 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 7], ["updated_at", "2020-12-17 04:42:05.702490"], ["id", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 4818)
+
+
+Started PATCH "/trails/1" for ::1 at 2020-12-16 23:42:07 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (1.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 8], ["updated_at", "2020-12-17 04:42:07.805935"], ["id", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 4819)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-16 23:42:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 1658)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-16 23:42:22 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-16 23:42:24 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 2362)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-16 23:42:24 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1463)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-16 23:42:32 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2549)
+
+
+Started PATCH "/trails/12" for ::1 at 2020-12-16 23:42:40 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (6.2ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 1], ["updated_at", "2020-12-17 04:42:40.161389"], ["id", 12]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 8.1ms | Allocations: 4840)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-16 23:42:44 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 1.3ms | Allocations: 1658)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-16 23:42:46 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 14], ["updated_at", "2020-12-17 04:42:46.737870"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 6.1ms | Allocations: 4840)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-16 23:56:31 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1258)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 18:09:53 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 0.8ms | Allocations: 5439)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-17 18:10:07 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 60ms (Views: 28.9ms | ActiveRecord: 1.8ms | Allocations: 12968)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-17 18:10:12 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 2379)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-17 18:10:18 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (2.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 3.4ms | ActiveRecord: 2.6ms | Allocations: 1675)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-17 18:10:24 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 15], ["updated_at", "2020-12-17 23:10:24.616268"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 21ms (Views: 1.1ms | ActiveRecord: 3.7ms | Allocations: 5588)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-17 18:10:24 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 16], ["updated_at", "2020-12-17 23:10:24.940202"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 5046)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-17 18:10:25 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (4.0ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 17], ["updated_at", "2020-12-17 23:10:25.669843"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 6.3ms | Allocations: 4842)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-17 18:10:25 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:34:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:21:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 18], ["updated_at", "2020-12-17 23:10:25.989602"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:22:in `update'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 4843)
+
+
+Started GET "/trails/11/comments" for ::1 at 2020-12-17 18:10:28 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"11"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='11')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 15.4ms | ActiveRecord: 5.4ms | Allocations: 5166)
+
+
+Started GET "/trails/11/comments" for ::1 at 2020-12-17 18:10:28 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"11"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='11')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1353)
+
+
+Started GET "/trails/11/comments" for ::1 at 2020-12-17 18:10:29 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"11"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='11')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1353)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 18:25:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (3.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 3.0ms | Allocations: 1258)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-17 18:25:22 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.7ms | Allocations: 2585)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 18:25:50 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-17 18:25:52 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1658)
+
+
+Started GET "/trails/11/comments" for ::1 at 2020-12-17 18:30:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"11"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='11')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 5052)
+
+
+Started GET "/trails/11/comments" for ::1 at 2020-12-17 18:31:03 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"11"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='11')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1353)
+
+
+Started GET "/trails/11/comments" for ::1 at 2020-12-17 18:32:38 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"11"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='11')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 1353)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-17 18:33:48 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 69ms (Views: 43.8ms | ActiveRecord: 0.6ms | Allocations: 12912)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 18:34:04 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.1ms | Allocations: 1271)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 23:28:06 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.8ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-17 23:28:08 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 2423)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-17 23:28:12 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (1.7ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 3], ["updated_at", "2020-12-18 04:28:12.761932"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 5380)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 23:28:17 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-17 23:28:20 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1658)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-17 23:52:18 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.4ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-17 23:52:20 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 2423)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-18 11:45:39 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 1.6ms | Allocations: 1259)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-18 11:45:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 1.5ms | Allocations: 1696)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-18 11:45:44 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started PATCH "/trails/2" for ::1 at 2020-12-18 11:45:47 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (1.7ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 14], ["updated_at", "2020-12-18 16:45:47.128492"], ["id", 2]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 5.0ms | Allocations: 4853)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 15:25:01 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (2.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 13.2ms | ActiveRecord: 2.0ms | Allocations: 1259)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 15:25:03 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (3.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 4.0ms | Allocations: 2423)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-23 15:25:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 1463)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-23 15:25:06 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.4ms | Allocations: 2550)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 15:25:08 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.8ms | Allocations: 1658)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 15:33:02 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 15:33:14 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.7ms | Allocations: 2423)
+
+
+Started GET "/trails/13/comments" for ::1 at 2020-12-23 15:33:31 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"13"}
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='13')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.7ms | Allocations: 1354)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 15:33:43 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.8ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 4], ["updated_at", "2020-12-23 20:33:43.195107"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 35ms (Views: 0.6ms | ActiveRecord: 14.6ms | Allocations: 4851)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 15:33:46 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (10.8ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 12], ["updated_at", "2020-12-23 20:33:46.412764"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 40ms (Views: 1.2ms | ActiveRecord: 14.0ms | Allocations: 4828)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 15:33:50 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (1.2ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 2], ["updated_at", "2020-12-23 20:33:50.088490"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 4827)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 15:33:50 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 3], ["updated_at", "2020-12-23 20:33:50.932672"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 23ms (Views: 1.5ms | ActiveRecord: 9.8ms | Allocations: 4826)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 15:33:54 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.7ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 2], ["updated_at", "2020-12-23 20:33:54.811236"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 24ms (Views: 0.4ms | ActiveRecord: 4.4ms | Allocations: 4834)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 15:33:58 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 1.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 15:34:00 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 15:34:06 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 3], ["updated_at", "2020-12-23 20:34:06.357779"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 62ms (Views: 0.4ms | ActiveRecord: 6.0ms | Allocations: 4837)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 15:34:09 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.7ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 4], ["updated_at", "2020-12-23 20:34:09.215582"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (26.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 58ms (Views: 0.5ms | ActiveRecord: 27.7ms | Allocations: 4826)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 15:34:16 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 15:34:18 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 2385)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 15:34:30 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (5.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 13], ["updated_at", "2020-12-23 20:34:30.936189"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 57ms (Views: 1.4ms | ActiveRecord: 8.5ms | Allocations: 4828)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 15:34:33 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (8.2ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 14], ["updated_at", "2020-12-23 20:34:33.375774"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 66ms (Views: 0.5ms | ActiveRecord: 10.6ms | Allocations: 8878)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 15:34:33 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 15], ["updated_at", "2020-12-23 20:34:33.987176"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 4.8ms | Allocations: 4828)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 15:34:38 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (5.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (2.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 5], ["updated_at", "2020-12-23 20:34:38.309575"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 30ms (Views: 1.3ms | ActiveRecord: 11.9ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 15:34:41 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 6], ["updated_at", "2020-12-23 20:34:41.355377"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (22.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 75ms (Views: 0.5ms | ActiveRecord: 24.1ms | Allocations: 4829)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-23 15:35:03 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 15:35:18 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 1658)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-23 15:35:21 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.4ms | Allocations: 2547)
+
+
+Started PATCH "/trails/8" for ::1 at 2020-12-23 16:09:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrail Load (1.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (19.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.8ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 3], ["updated_at", "2020-12-23 21:09:58.415058"], ["id", 8]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 40ms (Views: 0.3ms | ActiveRecord: 22.6ms | Allocations: 4858)
+
+
+Started PATCH "/trails/8" for ::1 at 2020-12-23 16:10:00 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 4], ["updated_at", "2020-12-23 21:10:00.123566"], ["id", 8]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 61ms (Views: 0.4ms | ActiveRecord: 2.5ms | Allocations: 4818)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:10:58 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1256)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:11:00 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (3.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 7.5ms | ActiveRecord: 3.9ms | Allocations: 2410)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:11:04 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (10.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (1.2ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 7], ["updated_at", "2020-12-23 21:11:04.350924"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 23.0ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:11:26 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (1.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 8], ["updated_at", "2020-12-23 21:11:26.470195"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 14.3ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:11:40 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.6ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.9ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 9], ["updated_at", "2020-12-23 21:11:40.173076"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 8.7ms | Allocations: 4828)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:14:26 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 16:14:29 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 1.6ms | Allocations: 1658)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:14:36 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 16:14:38 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 1658)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:14:54 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (6.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 11.5ms | ActiveRecord: 6.7ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 16:14:55 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1658)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-23 16:14:57 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (1.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 19], ["updated_at", "2020-12-23 21:14:57.187481"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 34ms (Views: 1.7ms | ActiveRecord: 15.3ms | Allocations: 4840)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:20:24 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 16:20:26 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1658)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:20:43 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:20:47 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 5.1ms | ActiveRecord: 0.7ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:21:05 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:21:08 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:24:28 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:24:32 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:24:36 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.8ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 2], ["updated_at", "2020-12-23 21:24:36.672332"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 21ms (Views: 0.8ms | ActiveRecord: 3.7ms | Allocations: 4832)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:24:51 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms | Allocations: 1243)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:24:55 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:24:58 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (10.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.9ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 3], ["updated_at", "2020-12-23 21:24:58.926700"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 38ms (Views: 0.4ms | ActiveRecord: 15.6ms | Allocations: 4832)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:24:59 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 4], ["updated_at", "2020-12-23 21:24:59.638410"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 56ms (Views: 0.4ms | ActiveRecord: 11.6ms | Allocations: 8738)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:24:59 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (1.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 5], ["updated_at", "2020-12-23 21:24:59.899692"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 9.0ms | Allocations: 8462)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:00 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 6], ["updated_at", "2020-12-23 21:25:00.099986"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 4.3ms | Allocations: 4832)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:00 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 7], ["updated_at", "2020-12-23 21:25:00.342013"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (34.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 115ms (Views: 0.5ms | ActiveRecord: 36.3ms | Allocations: 4833)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:00 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.7ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (13.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 8], ["updated_at", "2020-12-23 21:25:00.634688"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 117ms (Views: 2.7ms | ActiveRecord: 16.3ms | Allocations: 5033)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:00 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (5.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 9], ["updated_at", "2020-12-23 21:25:00.910252"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 28ms (Views: 3.2ms | ActiveRecord: 7.9ms | Allocations: 4832)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:01 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 10], ["updated_at", "2020-12-23 21:25:01.115992"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 12.0ms | Allocations: 8660)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:01 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (3.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 11], ["updated_at", "2020-12-23 21:25:01.328189"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 30ms (Views: 1.1ms | ActiveRecord: 6.4ms | Allocations: 4832)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:06 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 12], ["updated_at", "2020-12-23 21:25:06.609922"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 29ms (Views: 0.8ms | ActiveRecord: 10.4ms | Allocations: 4832)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:06 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (1.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (5.0ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 13], ["updated_at", "2020-12-23 21:25:06.994375"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 38ms (Views: 0.5ms | ActiveRecord: 8.0ms | Allocations: 5255)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:07 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (3.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 14], ["updated_at", "2020-12-23 21:25:07.164520"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 6.8ms | Allocations: 4832)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:07 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 15], ["updated_at", "2020-12-23 21:25:07.379879"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 45ms (Views: 5.0ms | ActiveRecord: 9.9ms | Allocations: 7660)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:07 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 16], ["updated_at", "2020-12-23 21:25:07.618382"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (21.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 67ms (Views: 0.7ms | ActiveRecord: 22.0ms | Allocations: 7964)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:25:07 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (8.9ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 17], ["updated_at", "2020-12-23 21:25:07.781112"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 20.0ms | Allocations: 4832)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 16:25:10 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 4], ["updated_at", "2020-12-23 21:25:10.215465"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 33ms (Views: 1.8ms | ActiveRecord: 15.6ms | Allocations: 4834)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 16:25:10 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (1.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 5], ["updated_at", "2020-12-23 21:25:10.663809"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 29ms (Views: 1.2ms | ActiveRecord: 9.3ms | Allocations: 4834)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 16:25:10 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 6], ["updated_at", "2020-12-23 21:25:10.938970"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 4.4ms | Allocations: 4834)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 16:25:18 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (13.0ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 7], ["updated_at", "2020-12-23 21:25:18.030072"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 15.3ms | Allocations: 4835)
+
+
+Started PATCH "/trails/15" for ::1 at 2020-12-23 16:34:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 18], ["updated_at", "2020-12-23 21:34:23.270237"], ["id", 15]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 4872)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:34:24 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 10], ["updated_at", "2020-12-23 21:34:24.554595"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 4826)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 16:35:12 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 16], ["updated_at", "2020-12-23 21:35:12.883806"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 4828)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 16:35:13 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 17], ["updated_at", "2020-12-23 21:35:13.383007"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 4828)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 16:35:13 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 18], ["updated_at", "2020-12-23 21:35:13.728351"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 4828)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 16:35:14 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 19], ["updated_at", "2020-12-23 21:35:14.370751"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 4829)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:35:16 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 11], ["updated_at", "2020-12-23 21:35:16.927549"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:35:17 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 12], ["updated_at", "2020-12-23 21:35:17.444047"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:35:18 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 13], ["updated_at", "2020-12-23 21:35:18.297185"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:35:19 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 14], ["updated_at", "2020-12-23 21:35:19.340230"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 16:35:19 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 15], ["updated_at", "2020-12-23 21:35:19.945979"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 4826)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:36:02 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1256)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:36:04 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.5ms | Allocations: 2413)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:36:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:36:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:36:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:36:06 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-23 16:36:06 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-23 16:36:07 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 1463)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-23 16:36:07 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2547)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:39:51 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:39:52 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:39:52 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:39:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:39:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:39:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:39:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:40:09 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:10 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 2388)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:12 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:12 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-23 16:40:13 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:40:41 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:40:43 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 16:41:39 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 16:41:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:08:24 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 0.8ms | Allocations: 2424)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:08:34 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-23 23:08:36 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:09:44 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-23 23:09:46 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 25ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-23 23:11:20 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.7ms | Allocations: 1658)
+
+
+Started GET "/boroughs/4/trails" for ::1 at 2020-12-23 23:11:21 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"4"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 4]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 2547)
+
+
+Started GET "/boroughs/3/trails" for ::1 at 2020-12-23 23:11:21 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"3"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 3]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1463)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:12:23 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:12:24 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 2386)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 23:12:27 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (7.8ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 16], ["updated_at", "2020-12-24 04:12:27.220479"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 40ms (Views: 0.4ms | ActiveRecord: 10.3ms | Allocations: 4851)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:12:35 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:12:37 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.7ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.8ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:40 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.6ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 5], ["updated_at", "2020-12-24 04:12:40.166442"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 4826)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:12:48 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:12:49 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:12:50 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.7ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:53 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.8ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 6], ["updated_at", "2020-12-24 04:12:53.932301"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 3.3ms | Allocations: 4826)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:55 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (1.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 7], ["updated_at", "2020-12-24 04:12:55.449646"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 4826)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:55 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (1.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.9ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 8], ["updated_at", "2020-12-24 04:12:55.986722"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 52ms (Views: 0.4ms | ActiveRecord: 6.8ms | Allocations: 4829)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:56 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 9], ["updated_at", "2020-12-24 04:12:56.161630"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 5.1ms | Allocations: 5024)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:56 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 10], ["updated_at", "2020-12-24 04:12:56.364086"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 17ms (Views: 1.7ms | ActiveRecord: 4.1ms | Allocations: 4826)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:12:56 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 11], ["updated_at", "2020-12-24 04:12:56.577679"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 4826)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 23:13:03 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.6ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 20], ["updated_at", "2020-12-24 04:13:03.567864"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 4828)
+
+
+Started PATCH "/trails/13" for ::1 at 2020-12-23 23:13:04 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (4.9ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 21], ["updated_at", "2020-12-24 04:13:04.387959"], ["id", 13]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 7.4ms | Allocations: 4828)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 23:13:07 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (1.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 17], ["updated_at", "2020-12-24 04:13:07.034613"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 23:13:08 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 18], ["updated_at", "2020-12-24 04:13:08.415167"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 6.1ms | Allocations: 4827)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 23:13:08 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 19], ["updated_at", "2020-12-24 04:13:08.739710"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 6.9ms | Allocations: 4826)
+
+
+Started PATCH "/trails/14" for ::1 at 2020-12-23 23:13:09 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 20], ["updated_at", "2020-12-24 04:13:09.708593"], ["id", 14]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 7.0ms | Allocations: 4826)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:13:15 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:13:22 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:14:59 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:15:05 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:18:54 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:18:57 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:22:04 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.8ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:22:08 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 23:22:12 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 8], ["updated_at", "2020-12-24 04:22:12.241664"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 36ms (Views: 0.7ms | ActiveRecord: 2.7ms | Allocations: 4837)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:35:53 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:35:56 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 2423)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 23:36:01 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 9], ["updated_at", "2020-12-24 04:36:01.778029"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 4859)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:37:52 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:37:55 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 2385)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 23:37:58 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 10], ["updated_at", "2020-12-24 04:37:58.828988"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 2.6ms | Allocations: 4834)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:41:27 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:41:29 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 2385)
+
+
+Started GET "/trails/16/comments" for ::1 at 2020-12-23 23:41:33 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"16"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='16')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 23:41:35 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 11], ["updated_at", "2020-12-24 04:41:35.681910"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 3.1ms | Allocations: 4834)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:42:27 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1243)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:42:29 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 23:42:33 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 12], ["updated_at", "2020-12-24 04:42:33.880721"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 9.7ms | Allocations: 4834)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:45:13 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:45:16 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 2385)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:45:16 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/trails/16/comments" for ::1 at 2020-12-23 23:45:20 -0500
+Processing by CommentsController#index as */*
+  Parameters: {"trail_id"=>"16"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE (trail_id ='16')[0m
+  ↳ app/controllers/comments_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1353)
+
+
+Started PATCH "/trails/16" for ::1 at 2020-12-23 23:45:23 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (1.2ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 13], ["updated_at", "2020-12-24 04:45:23.484110"], ["id", 16]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 3.0ms | Allocations: 4834)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:46:38 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.9ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.9ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:46:40 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (1.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 1.6ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-23 23:49:50 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:49:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.6ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.9ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:49:56 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.5ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 12], ["updated_at", "2020-12-24 04:49:56.601525"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (18.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 36ms (Views: 0.7ms | ActiveRecord: 19.8ms | Allocations: 4829)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" ORDER BY "trails"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/boroughs" for ::1 at 2020-12-23 23:59:54 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 1258)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-23 23:59:56 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 1.9ms | Allocations: 2423)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-23 23:59:59 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 13], ["updated_at", "2020-12-24 04:59:59.456196"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 6.0ms | Allocations: 4851)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 00:01:51 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 00:01:53 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-24 00:01:56 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 14], ["updated_at", "2020-12-24 05:01:56.661610"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 16ms (Views: 1.2ms | ActiveRecord: 2.7ms | Allocations: 4826)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 00:06:32 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 00:06:34 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-24 00:06:37 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 15], ["updated_at", "2020-12-24 05:06:37.822170"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 2.9ms | Allocations: 4829)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 00:08:12 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1243)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 00:08:14 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-24 00:08:17 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.4ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 16], ["updated_at", "2020-12-24 05:08:17.823708"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 4.8ms | Allocations: 4826)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 00:11:05 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 00:11:06 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 00:11:08 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started PATCH "/trails/17" for ::1 at 2020-12-24 00:11:11 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.6ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 17], ["updated_at", "2020-12-24 05:11:11.277802"], ["id", 17]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 4826)
+
+
