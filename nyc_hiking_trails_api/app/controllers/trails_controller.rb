@@ -3,6 +3,7 @@
       
         # GET /trails
         def index
+          # byebug
           @borough = Borough.find_by_id(params[:borough_id])
           @trails = @borough.trails
           # byebug

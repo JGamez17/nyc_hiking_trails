@@ -28216,3 +28216,340 @@ Processing by TrailsController#update as */*
 Completed 200 OK in 13ms (Views: 1.3ms | ActiveRecord: 2.6ms | Allocations: 4826)
 
 
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-24 17:14:30 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1697)
+
+
+Started PATCH "/trails/11" for ::1 at 2020-12-24 17:14:32 -0500
+Processing by TrailsController#update as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:22:in `set_trail'
+  [1m[36mCACHE Trail Load (0.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:14:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[36mTrail Update (0.3ms)[0m  [1m[33mUPDATE "trails" SET "likes" = ?, "updated_at" = ? WHERE "trails"."id" = ?[0m  [["likes", 20], ["updated_at", "2020-12-24 22:14:32.262676"], ["id", 11]]
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trails_controller.rb:15:in `update'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 4866)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:20:36 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.6ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 1.6ms | Allocations: 1258)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:44:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1259)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-24 17:44:09 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 1696)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:44:15 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:44:25 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:49:57 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:59:05 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 1258)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:59:12 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:59:27 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:59:29 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:59:34 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 17:59:47 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/5/trails" for ::1 at 2020-12-24 17:59:50 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"5"}
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 5]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1696)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:04:06 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 18:04:11 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 1]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2385)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:10:03 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-24 18:10:07 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2362)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:19:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1258)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-24 18:19:28 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 2400)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:20:49 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-24 18:20:54 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 2362)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:22:00 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:22:02 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.7ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.7ms | Allocations: 1242)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-24 18:22:03 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.1ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (1.2ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 1.3ms | Allocations: 2362)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:23:00 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.3ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 1242)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-24 18:23:02 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:32:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1258)
+
+
+Started GET "/boroughs" for ::1 at 2020-12-24 18:32:33 -0500
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/boroughs/2/trails" for ::1 at 2020-12-24 18:32:34 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"2"}
+  [1m[36mBorough Load (0.4ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:6:in `index'
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."borough_id" = ?[0m  [["borough_id", 2]]
+  ↳ app/controllers/trails_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 4.0ms | ActiveRecord: 0.7ms | Allocations: 2401)
+
+
+Started GET "/boroughs/[object%20HTMLInputElement]" for ::1 at 2020-12-24 18:32:45 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for BoroughsController):
+  
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/boroughs" for ::1 at 2020-12-24 18:35:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BoroughsController#index as */*
+  [1m[36mBorough Load (1.0ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs"[0m
+  ↳ app/controllers/boroughs_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 12.8ms | ActiveRecord: 2.7ms | Allocations: 4959)
+
+
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 18:35:54 -0500
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+  [1m[36mBorough Load (0.2ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 18:37:53 -0500
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 18:37:53 -0500
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 18:37:53 -0500
+Started GET "/boroughs/1/trails" for ::1 at 2020-12-24 18:37:53 -0500
+  ↳ app/controllers/trails_controller.rb:7:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrailsController#index as */*
+  Parameters: {"borough_id"=>"1"}
+Processing by TrailsController#index as */*
+  [1m[36mBorough Load (0.5ms)[0m  [1m[34mSELECT "boroughs".* FROM "boroughs" WHERE "boroughs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"borough_id"=>"1"}
+Processing by TrailsController#index as */*
+Processing by TrailsController#index as */*

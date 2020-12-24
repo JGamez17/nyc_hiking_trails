@@ -2,6 +2,7 @@ class BoroughButton {
   static container = document.getElementById("buttons");
 
   constructor(boroughs) {
+    // debugger;
     this.boroughs = boroughs;
     this.render();
     this.attachEventListener();
@@ -22,6 +23,7 @@ class BoroughButton {
       const trailInfo = document.getElementById("trails");
       trailInfo.innerHTML = "";
       const id = this.bttn.dataset.id;
+
       api.retrieveTrails(id);
     }
   };

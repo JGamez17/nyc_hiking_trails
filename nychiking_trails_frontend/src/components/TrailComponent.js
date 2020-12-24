@@ -13,6 +13,16 @@ class TrailComponent {
     this.buttonEventListener();
   }
 
+  static sortTrails() {
+    const boroughId = document.querySelector("#boroughId");
+    const url = "http://localhost:3000/boroughs/" + `${boroughId}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  }
+
   buttonEventListener() {
     this.trail.addEventListener("click", this.handleOnClick);
   }
@@ -66,6 +76,7 @@ class TrailComponent {
       length,
       difficulty,
       likes,
+      borough_id,
     } = this.trailInfo;
     this.trail.innerHTML = `
     <h3> Name: ${name}</h3>
@@ -80,6 +91,8 @@ class TrailComponent {
 
     <p id="trail-id"> ${likes || 0} Likes </p>
 
+    <input type="hidden" value="${borough_id}" id="boroughId">
+
     <button id="comment-button" class="comment-button" > Click here for comments </button>
 
     <div class="comments"> </div> 
@@ -89,3 +102,10 @@ class TrailComponent {
     `;
   }
 }
+
+// add a button to the index.html called (sort by popularity).
+//  This button should sort the trail elements currently on the DOM so that the trails display from most liked to least liked. This task will also require you to think about how you can select info from the DOM and re-append it.
+
+// user selects a borough, displays unsorted trails, once loaded a user pushes sort button
+// sort from most popular to least popular
+// then render to page
