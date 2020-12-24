@@ -38,11 +38,15 @@ class TrailComponent {
     // want to get the data-id 17
     // once inside get the trail-id ptag
     // update likes
+
     const trails = document.querySelector(".trails");
-    debugger;
-    const pTag = document.querySelector("data-id");
-    debugger;
-    pTag.innerHTML = `${trail.likes}` + " Likes ";
+    const data = trails.querySelectorAll(".trails-info");
+    data.forEach((trailInfo) => {
+      if (trailInfo.dataset.id === trail.id.toString()) {
+        const pTag = trailInfo.querySelector("#trail-id");
+        pTag.innerHTML = `${trail.likes}` + " Likes ";
+      }
+    });
   };
 
   renderTrail() {
@@ -74,7 +78,7 @@ class TrailComponent {
 
     <p> Difficultly: ${difficulty}</p>
 
-    <p id="trail.id"> ${likes || 0} Likes </p>
+    <p id="trail-id"> ${likes || 0} Likes </p>
 
     <button id="comment-button" class="comment-button" > Click here for comments </button>
 
