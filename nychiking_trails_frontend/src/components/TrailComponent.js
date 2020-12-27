@@ -4,22 +4,28 @@ class TrailComponent {
 
   constructor(trailInfo) {
     this.trailInfo = trailInfo;
-    this.name = trailInfo.name;
-    this.location = trailInfo.location;
-    this.park_name = trailInfo.park_name;
-    this.length = trailInfo.length;
-    this.difficulty = trailInfo.difficulty;
+    // debugger;
     this.renderTrail();
     this.buttonEventListener();
   }
 
   static sortTrails() {
-    const boroughId = document.querySelector("#boroughId");
-    const url = "http://localhost:3000/boroughs/" + `${boroughId}`;
+    const boroughId = document.querySelector("#boroughId").value;
+    // debugger;
+    const url = "http://localhost:3000/boroughs/" + `${boroughId}` + "/trails";
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        this.container.innerHTML = "";
+        const sortedData = data.sort((a, b) => {
+          if (a.likes > b.likes) {
+            return -1;
+          } else if (a.likes < b.likes) {
+            return 1;
+          }
+          return 0;
+        });
+        sortedData.forEach((data) => new TrailComponent(data));
       });
   }
 
